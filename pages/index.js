@@ -7,7 +7,7 @@ export default function Home() {
   const [dataResponse, setdataResponse] = useState([]);
   useEffect(() => {
     async function getPageData() {
-      const apiUrlEndpoint = `http://localhost:3000/api/getdata`;
+      const apiUrlEndpoint = `http://localhost:8080/api/getdata`;
       const response = await fetch(apiUrlEndpoint);
       const res = await response.json();
       console.log(res);
