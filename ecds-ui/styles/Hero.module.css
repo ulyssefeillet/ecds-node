@@ -1,0 +1,40 @@
+.heroWrapper {
+    width: 100%;
+    height: 250px;
+    background: #01345f;
+    position: relative;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  
+  .heroInner {
+    margin-left: 150px;
+    flex-direction: column;
+    z-index: 10;
+  }
+  
+  .headerText {
+    letter-spacing: 0.5px;
+    font-size: 2.5rem;
+    color: #353839;
+    font-weight: 600;
+    width: 60%;
+    margin-top: 5px;
+  }
+  
+  .heroInner p {
+    font-size: 18px;
+    margin: 25px 0;
+  }
+
+  .heroImage {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+  }
+  
+  .heroImage img {
+    height: 100%;
+  }
+ 
