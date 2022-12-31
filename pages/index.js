@@ -7,7 +7,7 @@ export default function Home() {
   const [dataResponse, setdataResponse] = useState([]);
   useEffect(() => {
     async function getPageData() {
-      const apiUrlEndpoint = `http://localhost:8080/api/getdata`;
+      const apiUrlEndpoint = `http://ecds-env.eba-9p4pa5fy.eu-west-3.elasticbeanstalk.com/api/getdata`;
       const response = await fetch(apiUrlEndpoint);
       const res = await response.json();
       setdataResponse(res.articles);
