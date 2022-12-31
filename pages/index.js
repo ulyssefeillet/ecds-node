@@ -10,7 +10,6 @@ export default function Home() {
       const apiUrlEndpoint = `http://localhost:8080/api/getdata`;
       const response = await fetch(apiUrlEndpoint);
       const res = await response.json();
-      console.log(res);
       setdataResponse(res.articles);
     }
     getPageData();

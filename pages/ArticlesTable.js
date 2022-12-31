@@ -22,7 +22,8 @@ export default function ArticlesTable({articles}) {
           </TableRow>
         </TableHead>
         <TableBody>
-        {articles.map((row) => (
+        {Array.isArray(articles)
+        ? articles.map((row) => (
             <TableRow key={row.title}>
               <TableCell component="th" scope="row">
                 {row.title}
@@ -32,7 +33,7 @@ export default function ArticlesTable({articles}) {
               <TableCell align="right">{row.keywords}</TableCell>
               <TableCell align="right">{row.author}</TableCell>
             </TableRow>
-          ))}
+          )) : null}
         </TableBody>
       </Table>
     </TableContainer>
