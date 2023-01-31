@@ -1,14 +1,15 @@
-import styles from "../styles/Hero.module.css";
+import styles from "../styles/Hero.module.css"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Hero = () => {
   return (
     <div className={`${styles.heroWrapper} center`}>
       <div className={`${styles.heroInner}`}>
         <h2 className={styles.headerText}>
-          Order groceries for delivery or pickup today
+          ECDS
         </h2>
         <div className={styles.slogan}>
-          <p>Whatever you want from local stores, brought right to your door</p>
+          <p></p>
         </div>
       </div>
       <div className={styles.heroImage}>

@@ -1,13 +1,4 @@
-.featuresWrapper {
-  flex-direction: column;
-}
-
-.featuresHeading {
-  font-size: 1.8rem;
-  text-align: center;
-}
-
-.tableAligned {
-  border-collapse: collapse;
-  margin: auto;
+.mainContainer {
+    display: flex;
+    flex-direction: row;
 }
